@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-de-martin-deployment
+spec:
+  selector:
+    matchLabels:
+      app: web-de-martin
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: web-de-martin
+    spec:
+      containers:
+      - name: web-de-martin
+        image: martooo/web-de-martin:20
+        ports:
+        - containerPort: 8080
