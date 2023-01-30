@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: web-de-martin
-        image: martooo/web-de-martin:31
+        image: martooo/web-de-martin:32
         ports:
         - containerPort: 8080
